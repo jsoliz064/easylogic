@@ -1,6 +1,23 @@
 @extends('layouts.app')
 
 @section('content')
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+	<link href="login.css" rel="stylesheet" type="text/css" >
+        <title> Iniciar sesion </title>
+</head>   
+<body> 
+<center>
+<div class="loginColor">
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
