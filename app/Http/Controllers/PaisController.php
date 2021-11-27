@@ -25,7 +25,7 @@ class PaisController extends Controller
      */
     public function create()
     {
-        //
+        return view('pais.create');
     }
 
     /**
@@ -36,7 +36,11 @@ class PaisController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        date_default_timezone_set("America/La_Paz");
+        $pais=Pais::create([
+            'nombre'=>request('nombre'),
+        ]);
+        return redirect()->route('pais.index');
     }
 
     /**
@@ -45,9 +49,9 @@ class PaisController extends Controller
      * @param  \App\Models\Pais  $pais
      * @return \Illuminate\Http\Response
      */
-    public function show(Pais $pais)
+    public function show(Pais $pai)
     {
-        //
+        return view('pais.show',compact ('pai'));
     }
 
     /**
@@ -56,9 +60,9 @@ class PaisController extends Controller
      * @param  \App\Models\Pais  $pais
      * @return \Illuminate\Http\Response
      */
-    public function edit(Pais $pais)
+    public function edit(Pais $pai)
     {
-        //
+        return view('pais.edit',compact('pai'));
     }
 
     /**
@@ -68,9 +72,13 @@ class PaisController extends Controller
      * @param  \App\Models\Pais  $pais
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Pais $pais)
+    public function update(Request $request, Pais $pai)
     {
-        //
+        date_default_timezone_set("America/La_Paz");
+        $pai->nombre=$request->nombre;
+        $pai->save();
+
+        return redirect()->route('pais.index');
     }
 
     /**
@@ -79,8 +87,9 @@ class PaisController extends Controller
      * @param  \App\Models\Pais  $pais
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Pais $pais)
+    public function destroy(Pais $pai)
     {
-        //
+        $pai->delete();
+        return redirect()->route('pais.index');
     }
 }

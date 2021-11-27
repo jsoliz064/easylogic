@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Ciudad;
+use App\Models\Pais;
+
 use Illuminate\Http\Request;
 
 class CiudadController extends Controller
@@ -14,8 +16,9 @@ class CiudadController extends Controller
      */
     public function index()
     {
-        
-        
+        $ciudads=Ciudad::all();
+        $pais=Pais::all();
+        return view('ciudad.index',compact('ciudads','pais'));
     }
 
     /**
@@ -36,7 +39,12 @@ class CiudadController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        date_default_timezone_set("America/La_Paz");
+        $ciudad=Ciudad::create([
+            'id_pais'=>request('id_pais'),
+            'nombre'=>request('nombre'),
+        ]);
+        return redirect()->route('ciudads.index');
     }
 
     /**
@@ -58,7 +66,8 @@ class CiudadController extends Controller
      */
     public function edit(Ciudad $ciudad)
     {
-        //
+        $pais =Pais::all();
+        return view('ciudad.edit',compact('ciudad','pais'));
     }
 
     /**
@@ -70,7 +79,11 @@ class CiudadController extends Controller
      */
     public function update(Request $request, Ciudad $ciudad)
     {
-        //
+        date_default_timezone_set("America/La_Paz");
+        $ciudad->id_pais=$request->id_pais;
+        $ciudad->nombre=$request->nombre;
+        $ciudad->save();
+        return redirect()->route('ciudads.index');
     }
 
     /**
@@ -81,6 +94,7 @@ class CiudadController extends Controller
      */
     public function destroy(Ciudad $ciudad)
     {
-        //
+        $ciudad->delete();
+        return redirect()->route('ciudads.index');
     }
 }

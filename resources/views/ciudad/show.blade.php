@@ -1,9 +1,8 @@
 @extends('adminlte::page')
 
-@section('title', 'Ciudades')
+@section('title', 'Clientes')
 
 @section('content_header')
-
 @stop
 
 @section('content')

@@ -3,21 +3,36 @@
 @section('title', 'Paises')
 
 @section('content_header')
-  <h1>LISTA DE PAISES</h1>
+  
 @stop
 
 @section('content')
-  <div class="card">
-    <div class="card-header"> 
-        {{-- solo los que tienen permiso a esas rutas.metodo podran ver el button --}}
-         
-          <a class="btn btn-primary btb-sm" href="{{url('/pais/create')}}">Registrar Pais</a>    
-       
-    </div>
-  </div>
-
+  <br>
   <div class="card">
     <div class="card-body">
+      <div align="center">
+        <form method="post" action="{{route('pais.store')}}"  novalidate >
+            @csrf
+            <h4><B>REGISTRAR PAIS</B></h4>
+
+            <div class="cbp-mc-daniel">
+              <input type="text" placeholder="Nombre del pais" name="nombre" class="focus border-primary  form-control" >
+              @error('nombre')
+                <p>DEBE INGRESAR BIEN EL DATO</p>
+              @enderror
+            </div>
+            
+            <button  class="btn btn-danger btn-sm" type="submit">Registrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+<br>
+  <div class="card">
+    <div class="card-body">
+      <div align="center">
+        <h4><B>PAISES</B></h4>
+      </div>
       <table class="table table-striped" id="ciudads" >
         <thead>
           <tr>
@@ -61,6 +76,7 @@
 @section('css')
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap5.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="{{asset('css/cruds.css')}}">
 @stop
 
 @section('js')

@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Ciudades')
+@section('title', 'Pais - Ciudad')
 
 @section('content_header')
-    <h1>Editar Ciudades</h1>
+    <h1>Editar Ciudad</h1>
 @stop
 
 @section('content')
@@ -21,6 +21,20 @@
 
             @error('nombre')
             <p>DEBE INGRESAR BIEN SU NOMBRE</p>
+            @enderror
+
+            <h5>Marca:</h5>
+            <select name = "id_pais" id="id_pais" class="form-control" onchange="habilitar()" >
+                <option value="{{$ciudad->id_pais}}">{{DB::table('pais')->where('id',$ciudad->id_pais)->value('nombre')}}</option>
+                    @foreach ($pais as $pai)
+                        <option value="{{$pai->id}}">
+                            {{$pai->nombre}}
+                        </option>
+                    @endforeach
+            </select>
+           
+            @error('id_pais')
+                <p>DEBE INGRESAR BIEN EL CAMPO</p>
             @enderror
             <br>
             <br>
