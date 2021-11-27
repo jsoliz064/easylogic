@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\PaisController;
 use App\Http\Controllers\CiudadController;
+use App\Http\Controllers\AgenteController;
+use App\Http\Controllers\TransporteController;
+use App\Http\Controllers\TipotransporteController;
+use App\Http\Controllers\TrasporteTipotransporteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +29,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('pais',PaisController::class);
 Route::resource('ciudads',CiudadController::class);
+Route::resource('agentes',AgenteController::class);
+Route::resource('transportes',TransporteController::class);
+Route::resource('tipotransportes',TipotransporteController::class);
+Route::resource('transportestipotransportes',TrasporteTipotransporteController::class);

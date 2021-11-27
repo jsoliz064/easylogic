@@ -261,6 +261,24 @@ return [
             'url'  => 'ciudads',
             'icon' => 'fas fa-map-marked-alt',
         ],
+        
+        [
+            'text'    => 'Transporte',
+            'icon'    => 'fas fa-truck-moving',
+            'submenu' => [
+                [
+                    'text' => 'Empresas de transporte',
+                    'url'  => '#',
+                    'icon' => 'fas fa-people-carry',
+                ],
+                [
+                    'text' => 'Tipos de transporte',
+                    'url'  => 'tipotransportes',
+                    'icon' => 'fas fa-plane',
+                ],
+                
+            ],
+        ],
         /* [
             'text'    => 'multilevel',
             'icon'    => 'fas fa-fw fa-share',
