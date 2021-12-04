@@ -1,10 +1,14 @@
-@extends('layouts.app')
+					
 
+@extends('layouts.app')
 @section('content')
 
 
 <!DOCTYPE html>
-<html>
+
+
+
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,7 +44,7 @@
 						<li><a href="https://goo.gl/maps/N4Cdk8s9FdN2"><i class="fa fa-map-marker"></i> direccion</a></li>
 					</ul>
 					<ul class="header-links pull-right">
-						<li><a href="usuario.html"><i class="fa fa-user-o"></i> Usuario</a></li>
+						<li><a href="{{route('login') }}"><i class="fa fa-user-o"></i> Usuario</a></li>
 					</ul>
 				</div>
 			</div>
@@ -50,7 +54,7 @@
 					<div class="row">
 						<div class="col-md-3">
 							<div class="header-logo">
-								<a href="index.html" class="logo">
+								<a href="{{route('importadora.index')}}" class="logo">
 									<img src="./img/icono.png" alt="easylogic" width="50px">
 									EASYLOGIC TEAM&#174;
 								</a>
@@ -536,5 +540,6 @@
 </html>
 
 
-
+<!--
 @endsection
+-->

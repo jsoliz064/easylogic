@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ActividadController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\PaisController;
@@ -8,6 +9,7 @@ use App\Http\Controllers\AgenteController;
 use App\Http\Controllers\TransporteController;
 use App\Http\Controllers\TipotransporteController;
 use App\Http\Controllers\TrasporteTipotransporteController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -33,3 +35,8 @@ Route::resource('agentes',AgenteController::class);
 Route::resource('transportes',TransporteController::class);
 Route::resource('tipotransportes',TipotransporteController::class);
 Route::resource('transportestipotransportes',TrasporteTipotransporteController::class);
+Route::resource('actividads',ActividadController::class);
+
+Route::get('importadora', function () {
+    return view('importadoras.index');
+})->name('importadora.index');
