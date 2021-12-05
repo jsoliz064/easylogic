@@ -1,3 +1,8 @@
+					
+
+@extends('layouts.app')
+@section('content')
+
 
 <!DOCTYPE html>
 
@@ -35,7 +40,7 @@
 				<div class="container">
 					<ul class="header-links pull-left">
 						<li><a><i class="fa fa-phone"></i> +504 8882-2467</a></li>
-						<li><a href=""><i class="fa fa-envelope-o"></i> temstorehn@gmail.com</a></li>
+						<!--<li><a href="mailto:logistica@gmail.com"><i class="fa fa-envelope-o"></i> temstorehn@gmail.com</a></li>-->
 						<li><a href="https://goo.gl/maps/N4Cdk8s9FdN2"><i class="fa fa-map-marker"></i> direccion</a></li>
 					</ul>
 					<ul class="header-links pull-right">
@@ -116,10 +121,10 @@
 			</div>
 		</header>
 		<!-- /HEADER -->
-
+<!--
 		<nav id="navigation">
 			<!-- container -->
-
+<!--	
 			<div class="container">
 				<div id="responsive-nav">
 					<ul class="main-nav nav navbar-nav">
@@ -134,7 +139,7 @@
 				</div>
 			</div>
 		</nav>
-
+-->
 		<!-- CONTENIDO -->
 		<div class="section">
 			<!-- container -->
@@ -533,3 +538,8 @@
 	
 	</body>
 </html>
+
+
+<!--
+@endsection
+-->

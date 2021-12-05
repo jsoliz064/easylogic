@@ -1,24 +1,25 @@
-					
 
 @extends('layouts.app')
-@section('content')
-
+@section('content')					
 
 <!DOCTYPE html>
-
-
-
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width"/>
 		 <!-- ETIQUETAS REFERENCIALES -->
 	    <meta name="description" content="Tienda Online logistica">
 	    <meta name="keywords" content="tienda, compras, precio, ventas, ecomerce, comercio, online, store, TEM, tecnología">
 	    <!--<meta http-equiv="author" content="Abdias Alvarado">-->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 		<title>Logistica</title>
-		<!-- Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+
+				<!-- Google Fonts -->
+				<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 		
 		<!-- Bootstrap -->
 		<link type="text/css" rel="stylesheet" href="style/bootstrap.min.css"/>
@@ -28,8 +29,11 @@
 
 		<!-- Hoja de estilo personalizada -->
 		<link type="text/css" rel="stylesheet" href="style/custom.css"/>
+
+		<!-- home.css añadir imagenes de boton para inicio -->
+		<link type="text/css" rel="stylesheet" href="style/home.css"/>
+
 		
-		<link rel="stylesheet" type="text/css" href="home.css" >
         <title> Home</title>
     </head>
 	<body>
@@ -39,27 +43,37 @@
 			<div id="encabezado-superior">
 				<div class="container">
 					<ul class="header-links pull-left">
-						<li><a><i class="fa fa-phone"></i> +504 8882-2467</a></li>
-						<!--<li><a href="mailto:logistica@gmail.com"><i class="fa fa-envelope-o"></i> temstorehn@gmail.com</a></li>-->
+						<li><a><i class="fa fa-phone"></i> +0000000</a></li>
+						<li><a href="mailto:logistica@gmail.com"><i class="fa fa-envelope-o"></i> easylogic@gmail.com</a></li>
 						<li><a href="https://goo.gl/maps/N4Cdk8s9FdN2"><i class="fa fa-map-marker"></i> direccion</a></li>
 					</ul>
+					
+
 					<ul class="header-links pull-right">
 						<li><a href="{{route('login') }}"><i class="fa fa-user-o"></i> Usuario</a></li>
+						<li><a href="{{route('login') }}"><i class="fa fa-user-o"></i> admin</a></li>
+
 					</ul>
+
+
 				</div>
 			</div>
 
 			<div id="header">
+				
 				<div class="container">
 					<div class="row">
 						<div class="col-md-3">
 							<div class="header-logo">
-								<a href="{{route('importadora.index')}}" class="logo">
-									<img src="./img/icono.png" alt="easylogic" width="50px">
+								<a href="{{route('home')}}" class="logo">
+									<img src="./img/icono.png" alt="easylogic" width="70px">
 									EASYLOGIC TEAM&#174;
 								</a>
 							</div>
+							
 						</div>
+
+
 
 						<!-- BARRA DE BÚSQUEDA -->
 						<div class="col-md-6">
@@ -67,15 +81,12 @@
 								<form>
 									<select class="input-select">
 										<option value="0">Categorías</option>
-										<option value="1">En Promoción</option>
-										<option value="1">Computadoras</option>
-										<option value="1">Electrónica</option>
-										<option value="1">Celulares</option>
-										<option value="1">Accesorios</option>
-										<option value="1">Impresoras</option>
-										<option value="1">Cámaras</option>
+										<option value="1">Agente</option>
+										<option value="1">Transporte</option>
+										<option value="1">Exportadora</option>
+										<option value="1">Importadora</option>
 									</select>
-									<input class="input" placeholder="Artículo a buscar">
+									<input class="input" placeholder="Buscar">
 									<button class="search-btn">Buscar</button>
 								</form>
 							</div>
@@ -85,24 +96,28 @@
 						<!-- USUARIO -->
 						<div class="col-md-3 clearfix">
 							<div class="header-ctn">
-								<!-- Deseos -->
-								<!--<div>
+
+							<!--
+								 <Contactos>
+								<div>
 									<a href="listadeseos.html">
 										<i class="fa fa-heart-o"></i>
-										<span>Deseos</span>
+										<span>Contactos</span>
 									</a>
-								</div>-->
-								<!-- /Deseos -->
+								</div>
+								</Contactos>
+								-->
 
+								
 								<!-- Carrito -->
-								<!--
+								
 								<div class="dropdown">
 									<a href="carrito.html" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
 										<i class="fa fa-shopping-cart"></i>
 										<span>Carrito</span>
 									</a>
 								</div>
-								-->
+								
 								<!-- /Carrito -->
 
 								<!-- Menu Toogle -->
@@ -119,12 +134,13 @@
 					</div>
 				</div>
 			</div>
+
+
 		</header>
 		<!-- /HEADER -->
+
 <!--
 		<nav id="navigation">
-			<!-- container -->
-<!--	
 			<div class="container">
 				<div id="responsive-nav">
 					<ul class="main-nav nav navbar-nav">
@@ -139,7 +155,21 @@
 				</div>
 			</div>
 		</nav>
+
 -->
+
+		
+<!--
+<button value="Agente" class = "agente" >
+<a href="{{route('importadora.index')}}">
+<img src="./img/icono.png" alt="easylogic" width="80px">
+<i class="fa fa-truck" style="font-size:20px">
+</i>
+<p>Exportadora</p>
+</a>
+</button>
+-->
+
 		<!-- CONTENIDO -->
 		<div class="section">
 			<!-- container -->
@@ -147,309 +177,125 @@
 				<!-- row -->
 				<div class="row">
 
-		<div class="col-md-12">
-						<div class="section-title text-center">
-							<h3 class="title">TRANSPORTE TERRESTRE</h3>
-						</div>
-					</div>
-
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/camion.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">Gaming</p>
-								<h3 class="product-name"><a href="#">Soluciones de Logística Integral SLI</a></h3>
-								<h4 class="product-price">Servicio de transporte</h4>
-								<p>
-								número 16, C. Tatarenda · 3 3515010
-								Cerrado ⋅ Abre a las 08:30
-								</P>
-							<!--	<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>-->
-							</div>
-						</div>
-					</div>
-					
-					
-					
 
 
-					<!-- /product -->
 
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/camion.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">Gaming</p>
-								<h3 class="product-name"><a href="#">Soluciones de Logística Integral SLI</a></h3>
-								<h4 class="product-price">Servicio de transporte</h4>
-								<p>
-								número 16, C. Tatarenda · 3 3515010
-								Cerrado ⋅ Abre a las 08:30
-								</P>
-							<!--	<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>-->
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-
-					<div class="clearfix visible-sm visible-xs"></div>
-
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/camion.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">Gaming</p>
-								<h3 class="product-name"><a href="#">Soluciones de Logística Integral SLI</a></h3>
-								<h4 class="product-price">Servicio de transporte</h4>
-								<p>
-								número 16, C. Tatarenda · 3 3515010
-								Cerrado ⋅ Abre a las 08:30
-								</P>
-							<!--	<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>-->
-							</div>
-						</div>
-					</div>
-
-					<!-- product -->
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/camion.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">Gaming</p>
-								<h3 class="product-name"><a href="#">Soluciones de Logística Integral SLI</a></h3>
-								<h4 class="product-price">Servicio de transporte</h4>
-								<p>
-								número 16, C. Tatarenda · 3 3515010
-								Cerrado ⋅ Abre a las 08:30
-								</P>
-							<!--	<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>-->
-							</div>
-						</div>
-					</div>
-					
-					
-					<!-- /product -->
-
-					<div class="col-md-12">
-						<div class="section-title text-center">
-							<h3 class="title">TRANSPORTE AEREO</h3>
-						</div>
-					</div>
-
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/avion.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">Gaming</p>
-								<h3 class="product-name"><a href="#">Soluciones de Logística Integral SLI</a></h3>
-								<h4 class="product-price">Servicio de transporte</h4>
-								<p>
-								número 16, C. Tatarenda · 3 3515010
-								Cerrado ⋅ Abre a las 08:30
-								</P>
-							<!--	<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>-->
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-
-					<!-- product -->
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/avion.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">Gaming</p>
-								<h3 class="product-name"><a href="#">Soluciones de Logística Integral SLI</a></h3>
-								<h4 class="product-price">Servicio de transporte</h4>
-								<p>
-								número 16, C. Tatarenda · 3 3515010
-								Cerrado ⋅ Abre a las 08:30
-								</P>
-							<!--	<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>-->
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-
-					<div class="clearfix visible-sm visible-xs"></div>
-
-					<!-- product -->
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/avion.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">Gaming</p>
-								<h3 class="product-name"><a href="#">Soluciones de Logística Integral SLI</a></h3>
-								<h4 class="product-price">Servicio de transporte</h4>
-								<p>
-								número 16, C. Tatarenda · 3 3515010
-								Cerrado ⋅ Abre a las 08:30
-								</P>
-							<!--	<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>-->
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-
-					<!-- product -->
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/avion.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">Gaming</p>
-								<h3 class="product-name"><a href="#">Soluciones de Logística Integral SLI</a></h3>
-								<h4 class="product-price">Servicio de transporte</h4>
-								<p>
-								número 16, C. Tatarenda · 3 3515010
-								Cerrado ⋅ Abre a las 08:30
-								</P>
-							<!--	<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>-->
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-
-					<div class="col-md-12">
-						<div class="section-title text-center">
-							<h3 class="title">TRANSPORTE MARÍTIMO</h3>
-						</div>
-					</div>
-
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/barco.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">CÁMARAS</p>
-								<h3 class="product-name"><a href="#">Sony A7 III</a></h3>
-								<h4 class="product-price">L.47,999.00</h4>
-								<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/barco.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">CÁMARAS</p>
-								<h3 class="product-name"><a href="#">Sony Parent A5 100</a></h3>
-								<h4 class="product-price">L.12,000.00</h4>
-								<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-
-					<div class="clearfix visible-sm visible-xs"></div>
-
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/barco.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">CÁMARAS</p>
-								<h3 class="product-name"><a href="#">Canon T6i</a></h3>
-								<h4 class="product-price">L.14,500.00</h4>
-								<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-					
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/barco.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">CÁMARAS</p>
-								<h3 class="product-name"><a href="#">Fujifilm HDR 324</a></h3>
-								<h4 class="product-price">L.32,930.00</h4>
-								<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-				</div>
-				<!-- /row -->
 			</div>
+
 			<!-- /container -->
+			<div class="ssss">  
+
+<div>
+<a class = "contenedor-accion" href="{{route('importadora.index')}}">
+<!--<img src="./img/icono.png" alt="easylogic" width="80px">-->
+<i class="fa fa-user-plus" aria-hidden="true" style="font-size:70px"></i>
+<p class="texto">Agente</p>
+<div class="valoracion">
+    <input id="radio1" type="radio" name="estrellas" value="5"><!--
+    --><label for="radio1"><i class="fa fa-star"></i></label><!--
+    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+    --><label for="radio2"><i class="fa fa-star"></i></label><!--
+    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+    --><label for="radio3"><i class="fa fa-star"></i></label><!--
+    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+    --><label for="radio4"><i class="fa fa-star"></i></label><!--
+    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+    --><label for="radio5"><i class="fa fa-star"></i></label>
+  </div>
+<br>
+<i class="fa fa-info" aria-hidden="true" style="font-size:20px;color:#f3753a"> Información</i>
+</a>
+
+</div>
+
+
+
+<div>
+<a class = "contenedor-accion" href="{{route('importadora.index')}}">
+<!--<img src="./img/icono.png" alt="easylogic" width="80px">-->
+<i class="fa fa-truck" aria-hidden="true" style="font-size:70px"></i>
+<p class="texto">Transporte</p>
+<div class="valoracion">
+    <input id="radio1" type="radio" name="estrellas" value="5"><!--
+    --><label for="radio1"><i class="fa fa-star"></i></label><!--
+    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+    --><label for="radio2"><i class="fa fa-star"></i></label><!--
+    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+    --><label for="radio3"><i class="fa fa-star"></i></label><!--
+    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+    --><label for="radio4"><i class="fa fa-star"></i></label><!--
+    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+    --><label for="radio5"><i class="fa fa-star"></i></label>
+  </div>
+<br>
+<i class="fa fa-info" aria-hidden="true" style="font-size:20px;color:#f3753a"> Información</i>
+</a>
+
+</div>
+
+
+
+
+<div>
+<a class = "contenedor-accion" href="{{route('importadora.index')}}">
+<!--<img src="./img/icono.png" alt="easylogic" width="80px">-->
+<i class="fa fa-cogs" aria-hidden="true" style="font-size:70px"></i>
+<p class="texto">Importadora</p>
+<div class="valoracion">
+    <input id="radio1" type="radio" name="estrellas" value="5"><!--
+    --><label for="radio1"><i class="fa fa-star"></i></label><!--
+    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+    --><label for="radio2"><i class="fa fa-star"></i></label><!--
+    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+    --><label for="radio3"><i class="fa fa-star"></i></label><!--
+    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+    --><label for="radio4"><i class="fa fa-star"></i></label><!--
+    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+    --><label for="radio5"><i class="fa fa-star"></i></label>
+  </div>
+<br>
+<i class="fa fa-info" aria-hidden="true" style="font-size:20px;color:#f3753a"> Información</i>
+</a>
+</div>
+
+
+
+
+<div>
+<a class = "contenedor-accion" href="{{route('importadora.index')}}">
+<!--<img src="./img/icono.png" alt="easylogic" width="80px">-->
+<i class="fa fa-handshake-o" aria-hidden="true" style="font-size:70px"></i>
+<p class="texto">Exportadora</p>
+<div class="valoracion">
+    <input id="radio1" type="radio" name="estrellas" value="5"><!--
+    --><label for="radio1"><i class="fa fa-star"></i></label><!--
+    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+    --><label for="radio2"><i class="fa fa-star"></i></label><!--
+    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+    --><label for="radio3"><i class="fa fa-star"></i></label><!--
+    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+    --><label for="radio4"><i class="fa fa-star"></i></label><!--
+    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+    --><label for="radio5"><i class="fa fa-star"></i></label>
+  </div>
+<br>
+<i class="fa fa-info" aria-hidden="true" style="font-size:20px;color:#f3753a"> Información</i>
+</a>
+</div>
+
+
+
+<br>
+</div>
 		</div>
+			<div id="paginacion">
+  <span class="izquierda">&laquo; Anterior</span>
+  <span class="derecha">Siguiente &raquo;</span>
+</div>		
 		<!-- /Section -->
-
-
-
-		<!-- /CONTENIDO -->
+					
+		<!-- CONTENIDO -->
+	
 
 
 
@@ -523,7 +369,7 @@
 					<div class="row">
 						<div class="col-md-12 text-center">
 							<span class="copyright">
-								Copyright &copy; 2020 Todos los derechos reservados. | uagrm
+								Copyright &copy; 2021 Todos los derechos reservados. | uagrm
 							</span>
 						</div>
 					</div>
@@ -540,6 +386,6 @@
 </html>
 
 
-<!--
 @endsection
--->
+
+
