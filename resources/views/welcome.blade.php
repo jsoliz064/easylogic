@@ -11,7 +11,7 @@
 	    <!--<meta http-equiv="author" content="Abdias Alvarado">-->
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{asset('style/font-awesome.min.css')}}">
 		<title>Logistica</title>
 
 
@@ -159,7 +159,7 @@
 <!--
 <button value="Agente" class = "agente" >
 <a href="{{route('importadora.index')}}">
-<img src="./img/icono.png" alt="easylogic" width="80px">
+<img src="{{asset('img/icono.png')}}" alt="easylogic" width="80px">
 <i class="fa fa-truck" style="font-size:20px">
 </i>
 <p>Exportadora</p>
@@ -184,7 +184,7 @@
 
 <div>
 <a class = "contenedor-accion" href="{{route('importadora.index')}}">
-<!--<img src="./img/icono.png" alt="easylogic" width="80px">-->
+<!--<img src="{{asset('img/icono.png')}}" alt="easylogic" width="80px">-->
 <i class="fa fa-user-plus" aria-hidden="true" style="font-size:70px"></i>
 <p class="texto">Agente</p>
 <div class="valoracion">
@@ -209,7 +209,7 @@
 
 <div>
 <a class = "contenedor-accion" href="{{route('importadora.index')}}">
-<!--<img src="./img/icono.png" alt="easylogic" width="80px">-->
+<!--<img src="{{asset('img/icono.png')}}" alt="easylogic" width="80px">-->
 <i class="fa fa-truck" aria-hidden="true" style="font-size:70px"></i>
 <p class="texto">Transporte</p>
 <div class="valoracion">
@@ -235,7 +235,7 @@
 
 <div>
 <a class = "contenedor-accion" href="{{route('importadora.index')}}">
-<!--<img src="./img/icono.png" alt="easylogic" width="80px">-->
+<!--<img src="{{asset('img/icono.png')}}" alt="easylogic" width="80px">-->
 <i class="fa fa-cogs" aria-hidden="true" style="font-size:70px"></i>
 <p class="texto">Importadora</p>
 <div class="valoracion">
@@ -260,7 +260,7 @@
 
 <div>
 <a class = "contenedor-accion" href="{{route('importadora.index')}}">
-<!--<img src="./img/icono.png" alt="easylogic" width="80px">-->
+<!--<img src="{{asset('img/icono.png')}}" alt="easylogic" width="80px">-->
 <i class="fa fa-handshake-o" aria-hidden="true" style="font-size:70px"></i>
 <p class="texto">Exportadora</p>
 <div class="valoracion">
