@@ -63,7 +63,7 @@
 						<div class="col-md-3">
 							<div class="header-logo">
 								<a href="{{route('home')}}" class="logo">
-									<img src="./img/icono.png" alt="easylogic" width="70px">
+									<img src="{{asset('img/icono.png')}}" alt="easylogic" width="70px">
 									EASYLOGIC TEAM&#174;
 								</a>
 							</div>
