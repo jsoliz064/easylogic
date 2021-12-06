@@ -19,16 +19,16 @@
 				<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 		
 		<!-- Bootstrap -->
-		<link type="text/css" rel="stylesheet" href="style/bootstrap.min.css"/>
+		<link type="text/css" rel="stylesheet" href="{{asset('style/bootstrap.min.css')}}"/>
 
 		<!-- Font Awesome Icon -->
-		<link rel="stylesheet" href="style/font-awesome.min.css">
+		<link rel="stylesheet" href="{{asset('style/font-awesome.min.css')}}">
 
 		<!-- Hoja de estilo personalizada -->
-		<link type="text/css" rel="stylesheet" href="style/custom.css"/>
+		<link type="text/css" rel="stylesheet" href="{{asset('style/custom.css')}}"/>
 
 		<!-- home.css añadir imagenes de boton para inicio -->
-		<link type="text/css" rel="stylesheet" href="style/home.css"/>
+		<link type="text/css" rel="stylesheet" href="{{asset('style/home.css')}}"/>
 
 		
         <title> Home</title>
