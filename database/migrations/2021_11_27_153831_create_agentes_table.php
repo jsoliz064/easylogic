@@ -19,8 +19,8 @@ class CreateAgentesTable extends Migration
             $table->string('nombre');
             $table->string('telefono');
             $table->string('correo');
+            //Luishiño
             $table->foreign('id_ciudad')->references('id')->on('ciudads')->onDelete('set null')->onUpdate('cascade');
-
             $table->timestamps();
 
         });
