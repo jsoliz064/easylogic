@@ -40,3 +40,8 @@ Route::resource('actividads',ActividadController::class);
 Route::get('importadora', function () {
     return view('importadoras.index');
 })->name('importadora.index');
+
+Route::get('agentes/home', function () {
+        return view('agentes.indexhome');
+})->name('agente.index');
+
