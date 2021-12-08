@@ -41,7 +41,7 @@ Route::get('importadora', function () {
     return view('importadoras.index');
 })->name('importadora.index');
 
-Route::get('agentes/home', function () {
-        return view('agentes.indexhome');
+Route::get('agentes', function () {
+        return view('agentes.indexcartahome');
 })->name('agente.index');
 

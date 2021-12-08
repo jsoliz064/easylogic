@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> 068b29494c089acfc7e9dacf2af18b5b50ed1677
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 	<head>
@@ -97,28 +94,8 @@
 						<div class="col-md-3 clearfix">
 							<div class="header-ctn">
 
-							<!--
-								 <Contactos>
-								<div>
-									<a href="listadeseos.html">
-										<i class="fa fa-heart-o"></i>
-										<span>Contactos</span>
-									</a>
-								</div>
-								</Contactos>
-								-->
 
-								
-								<!-- Carrito -->
-								
-								<div class="dropdown">
-									<a href="carrito.html" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-										<i class="fa fa-shopping-cart"></i>
-										<span>Carrito</span>
-									</a>
-								</div>
-								
-								<!-- /Carrito -->
+
 
 								<!-- Menu Toogle -->
 								<div class="menu-toggle">
@@ -144,30 +121,19 @@
 			<div class="container">
 				<div id="responsive-nav">
 					<ul class="main-nav nav navbar-nav">
-						<li class="active"><a href="index.html">Inicio</a></li>
-						<li><a href="computadoras.html">Computadoras</a></li>
-						<li><a href="celulares.html">Celulares</a></li>
-						<li><a href="electronica.html">Electrónica</a></li>
-						<li><a href="accesorios.html">Accesorios</a></li>
-						<li><a href="impresoras.html">Impresoras</a></li>
-						<li><a href="camaras.html">Cámaras</a></li>
+						<li class="active"><a href="#">Inicio</a></li>
+						<li><a href="#">Agente</a></li>
+						<li><a href="#">transporte</a></li>
+						<li><a href="#">Importadora</a></li>
+						<li><a href="#">Exportadora</a></li>
+						<li><a href="#">Contacto</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 
 
-		
-<!--
-<button value="Agente" class = "agente" >
-<a href="{{route('importadora.index')}}">
-<img src="{{asset('img/icono.png')}}" alt="easylogic" width="80px">
-<i class="fa fa-truck" style="font-size:20px">
-</i>
-<p>Exportadora</p>
-</a>
-</button>
--->
+
 
 		<!-- CONTENIDO -->
 		<div class="section">
@@ -185,26 +151,12 @@
 			<div class="ssss">  
 
 <div>
-<a class = "contenedor-accion" href="{{route('importadora.index')}}">
+<a class = "contenedor-accion" href="{{route('agente.index')}}">
 <!--<img src="{{asset('img/icono.png')}}" alt="easylogic" width="80px">-->
 <i class="fa fa-user-plus" aria-hidden="true" style="font-size:70px"></i>
 <p class="texto">Agente</p>
-<div class="valoracion">
-    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-    --><label for="radio1"><i class="fa fa-star"></i></label><!--
-    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-    --><label for="radio2"><i class="fa fa-star"></i></label><!--
-    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-    --><label for="radio3"><i class="fa fa-star"></i></label><!--
-    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-    --><label for="radio4"><i class="fa fa-star"></i></label><!--
-    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-    --><label for="radio5"><i class="fa fa-star"></i></label>
-  </div>
-<br>
 <i class="fa fa-info" aria-hidden="true" style="font-size:20px;color:#f3753a"> Información</i>
 </a>
-
 </div>
 
 
@@ -214,19 +166,6 @@
 <!--<img src="{{asset('img/icono.png')}}" alt="easylogic" width="80px">-->
 <i class="fa fa-truck" aria-hidden="true" style="font-size:70px"></i>
 <p class="texto">Transporte</p>
-<div class="valoracion">
-    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-    --><label for="radio1"><i class="fa fa-star"></i></label><!--
-    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-    --><label for="radio2"><i class="fa fa-star"></i></label><!--
-    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-    --><label for="radio3"><i class="fa fa-star"></i></label><!--
-    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-    --><label for="radio4"><i class="fa fa-star"></i></label><!--
-    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-    --><label for="radio5"><i class="fa fa-star"></i></label>
-  </div>
-<br>
 <i class="fa fa-info" aria-hidden="true" style="font-size:20px;color:#f3753a"> Información</i>
 </a>
 
@@ -240,23 +179,10 @@
 <!--<img src="{{asset('img/icono.png')}}" alt="easylogic" width="80px">-->
 <i class="fa fa-cogs" aria-hidden="true" style="font-size:70px"></i>
 <p class="texto">Importadora</p>
-<div class="valoracion">
-    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-    --><label for="radio1"><i class="fa fa-star"></i></label><!--
-    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-    --><label for="radio2"><i class="fa fa-star"></i></label><!--
-    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-    --><label for="radio3"><i class="fa fa-star"></i></label><!--
-    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-    --><label for="radio4"><i class="fa fa-star"></i></label><!--
-    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-    --><label for="radio5"><i class="fa fa-star"></i></label>
-  </div>
-<br>
+
 <i class="fa fa-info" aria-hidden="true" style="font-size:20px;color:#f3753a"> Información</i>
 </a>
 </div>
-
 
 
 
@@ -265,19 +191,6 @@
 <!--<img src="{{asset('img/icono.png')}}" alt="easylogic" width="80px">-->
 <i class="fa fa-handshake-o" aria-hidden="true" style="font-size:70px"></i>
 <p class="texto">Exportadora</p>
-<div class="valoracion">
-    <input id="radio1" type="radio" name="estrellas" value="5"><!--
-    --><label for="radio1"><i class="fa fa-star"></i></label><!--
-    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-    --><label for="radio2"><i class="fa fa-star"></i></label><!--
-    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-    --><label for="radio3"><i class="fa fa-star"></i></label><!--
-    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-    --><label for="radio4"><i class="fa fa-star"></i></label><!--
-    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-    --><label for="radio5"><i class="fa fa-star"></i></label>
-  </div>
-<br>
 <i class="fa fa-info" aria-hidden="true" style="font-size:20px;color:#f3753a"> Información</i>
 </a>
 </div>
@@ -309,12 +222,11 @@
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
 								<h3 class="footer-title">Sobre Nosotros</h3>
-								<p>Nos dedicamos a ofrecerte los mejores productos al mejor precio. Contamos con
-								sistema de pedidos hacia proveedores en linea.</p>
+								<p>Nos dedicamos a ofrecerte los mejores servicios</p>
 								<ul class="footer-links">
-									<li><a href="https://goo.gl/maps/N4Cdk8s9FdN2"><i class="fa fa-map-marker"></i>2 Calle SO, Bo. San Juan</a></li>
-									<li><a><i class="fa fa-phone"></i>+504 8882-2467</a></li>
-									<li><a href="mailto:temstorehn@gmail.com"><i class="fa fa-envelope-o"></i> temstorehn@gmail.com</a></li>
+									<li><a href="https://goo.gl/maps/N4Cdk8s9FdN2"><i class="fa fa-map-marker"></i>lugar xxxxxxx</a></li>
+									<li><a><i class="fa fa-phone"></i>+00000000000</a></li>
+									<li><a href="mailto:easylogic@gmail.com "><i class="fa fa-envelope-o"></i> easylogic@gmail.com </a></li>
 								</ul>
 							</div>
 						</div>
@@ -323,12 +235,11 @@
 							<div class="footer">
 								<h3 class="footer-title">Categorías</h3>
 								<ul class="footer-links">
-									<li><a href="computadoras.html">Computadoras</a></li>
-									<li><a href="celulares.html">Celulares</a></li>
-									<li><a href="electronica.html">Electrónica</a></li>
-									<li><a href="accesorios.html">Accesorios</a></li>
-									<li><a href="impresoras.html">Impresoras</a></li>
-									<li><a href="camaras.html.">Cámaras</a></li>
+									<li><a href="#">Agente</a></li>
+									<li><a href="">Transporte</a></li>
+									<li><a href="#">Electrónica</a></li>
+									<li><a href="#">Importadora</a></li>
+									<li><a href="#">Exportadora</a></li>
 								</ul>
 							</div>
 						</div>
@@ -339,10 +250,10 @@
 							<div class="footer">
 								<h3 class="footer-title">Información</h3>
 								<ul class="footer-links">
-									<li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
-									<li><a href="contactanos.html">Contáctanos</a></li>
-									<li><a href="politicasdeprivacidad.html">Políticas de Privacidad</a></li>
-									<li><a href="terminosycondiciones.html">Términos y Condiciones</a></li>
+									<li><a href="#">Sobre Nosotros</a></li>
+									<li><a href="#">Contáctanos</a></li>
+									<li><a href="#">Políticas de Privacidad</a></li>
+									<li><a href="#">Términos y Condiciones</a></li>
 								</ul>
 							</div>
 						</div>
@@ -351,10 +262,9 @@
 							<div class="footer">
 								<h3 class="footer-title">Clientes</h3>
 								<ul class="footer-links">
-									<li><a href="usuario.html">Mi Cuenta</a></li>
-									<li><a href="carrito.html">Ver Carrito</a></li>
-									<li><a href="listadeseos.html">Lista de Deseos</a></li>
-									<li><a href="ayuda.html">Ayuda</a></li>
+									<li><a href="#">Mi Cuenta</a></li>
+									<li><a href="#">Ver servicio</a></li>
+									<li><a href="#">Ayuda</a></li>
 								</ul>
 							</div>
 						</div>
@@ -368,7 +278,7 @@
 					<div class="row">
 						<div class="col-md-12 text-center">
 							<span class="copyright">
-								Copyright &copy; 2021 Todos los derechos reservados. | uagrm
+								Copyright &copy; 2021 Todos los derechos reservados. | easylogic
 							</span>
 						</div>
 					</div>
@@ -383,11 +293,3 @@
 	
 	</body>
 </html>
-<<<<<<< HEAD
-=======
-
-
-
-
-
->>>>>>> 068b29494c089acfc7e9dacf2af18b5b50ed1677
