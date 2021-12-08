@@ -261,6 +261,12 @@ return [
             'url'  => 'ciudads',
             'icon' => 'fas fa-map-marked-alt',
         ],
+
+        [
+            'text' => 'Agentes',
+            'url'  => 'agentes',
+            'icon' => 'fas fa-fw fa-user',
+        ],
         
         [
             'text'    => 'Transporte',

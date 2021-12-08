@@ -1,18 +1,15 @@
 @extends('adminlte::page')
 
-@section('title', 'Clientes')
+@section('title', 'Agentes')
 
 @section('content_header')
-  <h1>LISTA DE CLIENTES</h1>
+  <h1>LISTA DE AGENTES</h1>
 @stop
 
 @section('content')
   <div class="card">
     <div class="card-header"> 
-        {{-- solo los que tienen permiso a esas rutas.metodo podran ver el button --}}
-         @can('clientes.create')
-          <a class="btn btn-primary btb-sm" href="{{url('/clientes/create')}}">Registrar Cliente</a>    
-        @endcan 
+          <a class="btn btn-primary btb-sm" href="{{route('agentes.create')}}">Registrar Agente</a>    
     </div>
   </div>
 
@@ -25,6 +22,7 @@
             <th scope="col">Nombre Completo</th>
             <th scope="col">Telefono</th>
             <th scope="col">Email</th>
+            <th scope="col">Ciudad</th>
             <th scope="col" width="20%">Acciones</th>
             {{-- <th colspan=""></th> --}}
           </tr>
@@ -32,25 +30,20 @@
         
         <tbody>
 
-          @foreach ($clientes as $cliente)
+          @foreach ($agentes as $agente)
             <tr>
-              <td>{{$cliente->id}}</td>
-              <td>{{$cliente->nombre}}</td>
-              <td>{{$cliente->telefono}}</td>
-              <td>{{$cliente->email}}</td>
+              <td>{{$agente->id}}</td>
+              <td>{{$agente->nombre}}</td>
+              <td>{{$agente->telefono}}</td>
+              <td>{{$agente->email}}</td>
+              <td>{{DB::table('ciudads')->where('id',$agente->id_ciudad)->value('nombre')}}</td>
               <td >
-                <form  action="{{route('clientes.destroy',$cliente)}}" method="post">
+                <form  action="{{route('agentes.destroy',$agente)}}" method="post">
                   @csrf
-                  @method('delete')
-                   
-                    <a  class="btn btn-primary btn-sm" href="{{route('clientes.show',$cliente)}}">Ver</a>  
-                    @can('clientes.edit')
-                    <a class="btn btn-info btn-sm" href="{{route('clientes.edit',$cliente)}}">Editar</a> 
-                    @endcan
-                    @can('clientes.destroy')                                  
+                  @method('delete')                   
+                    <a class="btn btn-info btn-sm" href="{{route('agentes.edit',$agente)}}">Ver o Editar</a> 
                     <button class="btn btn-danger btn-sm" onclick="return confirm('¿ESTA SEGURO DE  BORRAR?')" 
                     value="Borrar">Eliminar</button>
-                    @endcan
 
                 </form>
               </td>    
