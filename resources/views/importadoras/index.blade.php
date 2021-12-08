@@ -35,7 +35,7 @@
 				<div class="container">
 					<ul class="header-links pull-left">
 						<li><a><i class="fa fa-phone"></i> +504 8882-2467</a></li>
-						<li><a href=""><i class="fa fa-envelope-o"></i> temstorehn@gmail.com</a></li>
+						<li><a href=""><i class="fa fa-envelope-o"></i> easylogic@gmail.com</a></li>
 						<li><a href="https://goo.gl/maps/N4Cdk8s9FdN2"><i class="fa fa-map-marker"></i> direccion</a></li>
 					</ul>
 					<ul class="header-links pull-right">
@@ -56,21 +56,19 @@
 							</div>
 						</div>
 
+
 						<!-- BARRA DE BÚSQUEDA -->
 						<div class="col-md-6">
 							<div class="header-search">
 								<form>
 									<select class="input-select">
 										<option value="0">Categorías</option>
-										<option value="1">En Promoción</option>
-										<option value="1">Computadoras</option>
-										<option value="1">Electrónica</option>
-										<option value="1">Celulares</option>
-										<option value="1">Accesorios</option>
-										<option value="1">Impresoras</option>
-										<option value="1">Cámaras</option>
+										<option value="1">Agente</option>
+										<option value="1">Transporte</option>
+										<option value="1">Exportadora</option>
+										<option value="1">Importadora</option>
 									</select>
-									<input class="input" placeholder="Artículo a buscar">
+									<input class="input" placeholder="Buscar">
 									<button class="search-btn">Buscar</button>
 								</form>
 							</div>
@@ -124,12 +122,12 @@
 				<div id="responsive-nav">
 					<ul class="main-nav nav navbar-nav">
 						<li class="active"><a href="index.html">Inicio</a></li>
-						<li><a href="computadoras.html">Computadoras</a></li>
-						<li><a href="celulares.html">Celulares</a></li>
-						<li><a href="electronica.html">Electrónica</a></li>
-						<li><a href="accesorios.html">Accesorios</a></li>
-						<li><a href="impresoras.html">Impresoras</a></li>
-						<li><a href="camaras.html">Cámaras</a></li>
+						<li><a href="">Agente</a></li>
+						<li><a href="">Transporte</a></li>
+						<li><a href="">Exportadora</a></li>
+						<li><a href="">Accesorios</a></li>
+						<li><a href="">Importadora</a></li>
+						<li><a href="">Contacto</a></li>
 					</ul>
 				</div>
 			</div>
@@ -144,7 +142,7 @@
 
 		<div class="col-md-12">
 						<div class="section-title text-center">
-							<h3 class="title">TRANSPORTE TERRESTRE</h3>
+							<h3 class="title">IMPORTADORA</h3>
 						</div>
 					</div>
 
@@ -152,16 +150,17 @@
 					<div class="col-md-3 col-xs-6">
 						<div class="product">
 							<div class="product-img">
-								<img src="./img/camion.png" alt="">
+								<img src="./img/logoimportadora.jpg" alt>
 							</div>
 							<div class="product-body">
-								<p class="product-category">Gaming</p>
-								<h3 class="product-name"><a href="#">Soluciones de Logística Integral SLI</a></h3>
+								<p class="product-category">Importadora</p>
+								<h3 class="product-name"><a href="#">Importadora Inturias</a></h3>
 								<h4 class="product-price">Servicio de transporte</h4>
 								<p>
-								número 16, C. Tatarenda · 3 3515010
-								Cerrado ⋅ Abre a las 08:30
-								</P>
+						Dirección: Av.Prefecto Rivas 281, Santa Cruz de la Sierra
+						Horas: 
+						Cerrado ⋅ Abre a las 08:00 del lun
+						Teléfono: 3 3525940								</P>
 							<!--	<div class="product-btns">
 									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
 									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
@@ -171,270 +170,7 @@
 					</div>
 					
 					
-					
-
-
-					<!-- /product -->
-
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/camion.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">Gaming</p>
-								<h3 class="product-name"><a href="#">Soluciones de Logística Integral SLI</a></h3>
-								<h4 class="product-price">Servicio de transporte</h4>
-								<p>
-								número 16, C. Tatarenda · 3 3515010
-								Cerrado ⋅ Abre a las 08:30
-								</P>
-							<!--	<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>-->
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-
-					<div class="clearfix visible-sm visible-xs"></div>
-
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/camion.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">Gaming</p>
-								<h3 class="product-name"><a href="#">Soluciones de Logística Integral SLI</a></h3>
-								<h4 class="product-price">Servicio de transporte</h4>
-								<p>
-								número 16, C. Tatarenda · 3 3515010
-								Cerrado ⋅ Abre a las 08:30
-								</P>
-							<!--	<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>-->
-							</div>
-						</div>
-					</div>
-
-					<!-- product -->
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/camion.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">Gaming</p>
-								<h3 class="product-name"><a href="#">Soluciones de Logística Integral SLI</a></h3>
-								<h4 class="product-price">Servicio de transporte</h4>
-								<p>
-								número 16, C. Tatarenda · 3 3515010
-								Cerrado ⋅ Abre a las 08:30
-								</P>
-							<!--	<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>-->
-							</div>
-						</div>
-					</div>
-					
-					
-					<!-- /product -->
-
-					<div class="col-md-12">
-						<div class="section-title text-center">
-							<h3 class="title">TRANSPORTE AEREO</h3>
-						</div>
-					</div>
-
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/avion.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">Gaming</p>
-								<h3 class="product-name"><a href="#">Soluciones de Logística Integral SLI</a></h3>
-								<h4 class="product-price">Servicio de transporte</h4>
-								<p>
-								número 16, C. Tatarenda · 3 3515010
-								Cerrado ⋅ Abre a las 08:30
-								</P>
-							<!--	<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>-->
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-
-					<!-- product -->
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/avion.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">Gaming</p>
-								<h3 class="product-name"><a href="#">Soluciones de Logística Integral SLI</a></h3>
-								<h4 class="product-price">Servicio de transporte</h4>
-								<p>
-								número 16, C. Tatarenda · 3 3515010
-								Cerrado ⋅ Abre a las 08:30
-								</P>
-							<!--	<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>-->
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-
-					<div class="clearfix visible-sm visible-xs"></div>
-
-					<!-- product -->
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/avion.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">Gaming</p>
-								<h3 class="product-name"><a href="#">Soluciones de Logística Integral SLI</a></h3>
-								<h4 class="product-price">Servicio de transporte</h4>
-								<p>
-								número 16, C. Tatarenda · 3 3515010
-								Cerrado ⋅ Abre a las 08:30
-								</P>
-							<!--	<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>-->
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-
-					<!-- product -->
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/avion.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">Gaming</p>
-								<h3 class="product-name"><a href="#">Soluciones de Logística Integral SLI</a></h3>
-								<h4 class="product-price">Servicio de transporte</h4>
-								<p>
-								número 16, C. Tatarenda · 3 3515010
-								Cerrado ⋅ Abre a las 08:30
-								</P>
-							<!--	<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>-->
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-
-					<div class="col-md-12">
-						<div class="section-title text-center">
-							<h3 class="title">TRANSPORTE MARÍTIMO</h3>
-						</div>
-					</div>
-
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/barco.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">CÁMARAS</p>
-								<h3 class="product-name"><a href="#">Sony A7 III</a></h3>
-								<h4 class="product-price">L.47,999.00</h4>
-								<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/barco.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">CÁMARAS</p>
-								<h3 class="product-name"><a href="#">Sony Parent A5 100</a></h3>
-								<h4 class="product-price">L.12,000.00</h4>
-								<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-
-					<div class="clearfix visible-sm visible-xs"></div>
-
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/barco.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">CÁMARAS</p>
-								<h3 class="product-name"><a href="#">Canon T6i</a></h3>
-								<h4 class="product-price">L.14,500.00</h4>
-								<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-					
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/barco.png" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">CÁMARAS</p>
-								<h3 class="product-name"><a href="#">Fujifilm HDR 324</a></h3>
-								<h4 class="product-price">L.32,930.00</h4>
-								<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
+				
 				</div>
 				<!-- /row -->
 			</div>
@@ -473,12 +209,12 @@
 							<div class="footer">
 								<h3 class="footer-title">Categorías</h3>
 								<ul class="footer-links">
-									<li><a href="computadoras.html">Computadoras</a></li>
-									<li><a href="celulares.html">Celulares</a></li>
-									<li><a href="electronica.html">Electrónica</a></li>
-									<li><a href="accesorios.html">Accesorios</a></li>
-									<li><a href="impresoras.html">Impresoras</a></li>
-									<li><a href="camaras.html.">Cámaras</a></li>
+					<li><a href="">Agente</a></li>
+						<li><a href="">Transporte</a></li>
+						<li><a href="">Exportadora</a></li>
+						<li><a href="">Accesorios</a></li>
+						<li><a href="">Importadora</a></li>
+						<li><a href="">Contacto</a></li>
 								</ul>
 							</div>
 						</div>
