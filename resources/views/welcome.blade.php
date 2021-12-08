@@ -151,7 +151,7 @@
 			<div class="ssss">  
 
 <div>
-<a class = "contenedor-accion" href="{{route('agente.index')}}">
+<a class = "contenedor-accion" href="{{route('agente.home')}}">
 <!--<img src="{{asset('img/icono.png')}}" alt="easylogic" width="80px">-->
 <i class="fa fa-user-plus" aria-hidden="true" style="font-size:70px"></i>
 <p class="texto">Agente</p>
@@ -162,7 +162,7 @@
 
 
 <div>
-<a class = "contenedor-accion" href="{{route('importadora.index')}}">
+<a class = "contenedor-accion" href="">
 <!--<img src="{{asset('img/icono.png')}}" alt="easylogic" width="80px">-->
 <i class="fa fa-truck" aria-hidden="true" style="font-size:70px"></i>
 <p class="texto">Transporte</p>
@@ -175,7 +175,7 @@
 
 
 <div>
-<a class = "contenedor-accion" href="{{route('importadora.index')}}">
+<a class = "contenedor-accion" href="">
 <!--<img src="{{asset('img/icono.png')}}" alt="easylogic" width="80px">-->
 <i class="fa fa-cogs" aria-hidden="true" style="font-size:70px"></i>
 <p class="texto">Importadora</p>
@@ -187,7 +187,7 @@
 
 
 <div>
-<a class = "contenedor-accion" href="{{route('importadora.index')}}">
+<a class = "contenedor-accion" href="">
 <!--<img src="{{asset('img/icono.png')}}" alt="easylogic" width="80px">-->
 <i class="fa fa-handshake-o" aria-hidden="true" style="font-size:70px"></i>
 <p class="texto">Exportadora</p>

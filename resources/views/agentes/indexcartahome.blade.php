@@ -33,42 +33,52 @@
 
 
 			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-<!--
-		<div class="col-md-12">
-						<div class="section-title text-center">
-							<h3 class="title">IMPORTADORA</h3>
+@foreach ($agentes as $agente)
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-xs-6">
+				<div class="product">
+					<div class="product-img">
+						<img src="{{asset($agente->url)}}" alt>
+					</div>
+					<div class="product-body">
+						<p class="product-category">Agente</p>
+						<h3 class="product-name"><a href="#">{{$agente->nombre}}	</a></h3>
+						<h4 class="product-price">Servicio de transporte</h4>
+						<p>
+				Dirección: Av.Prefecto Rivas 281, Santa Cruz de la Sierra
+				Horas: 
+				Cerrado ⋅ Abre a las 08:00 del lun
+				Teléfono: {{$agente->telefono}}								</P>
+					<div class="product-btns">
+							<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
+							<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
 						</div>
 					</div>
--->
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="./img/usuario.png" alt>
-							</div>
-							<div class="product-body">
-								<p class="product-category">Agente</p>
-								<h3 class="product-name"><a href="#">Importadora Inturias</a></h3>
-								<h4 class="product-price">Servicio de transporte</h4>
-								<p>
-						Dirección: Av.Prefecto Rivas 281, Santa Cruz de la Sierra
-						Horas: 
-						Cerrado ⋅ Abre a las 08:00 del lun
-						Teléfono: 3 3525940								</P>
-							<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
-									<button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-                    </div>
-				<!-- /row -->
-			</div>
+				</div>
+			</div>	
+		</div>
+	</div>	
+@endforeach
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			<!-- /container -->
 
 

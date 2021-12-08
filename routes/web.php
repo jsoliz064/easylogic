@@ -37,11 +37,13 @@ Route::resource('tipotransportes',TipotransporteController::class);
 Route::resource('transportestipotransportes',TrasporteTipotransporteController::class);
 Route::resource('actividads',ActividadController::class);
 
-Route::get('importadora', function () {
-    return view('importadoras.index');
-})->name('importadora.index');
+Route::get('agentesInicio',[AgenteController::class,'indexHome'])->name('agente.home');
 
-Route::get('agentes', function () {
+/* Route::get('importadora', function () {
+    return view('importadoras.index');
+})->name('importadora.index'); */
+
+/* Route::get('agentes', function () {
         return view('agentes.indexcartahome');
-})->name('agente.index');
+})->name('agente.index'); */
 

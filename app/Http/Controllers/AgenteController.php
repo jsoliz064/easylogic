@@ -19,6 +19,12 @@ class AgenteController extends Controller
       
         return view('agentes.index',compact('agentes'));
     }
+    public function indexHome()
+    {
+        $agentes=Agente::all();
+      
+        return view('agentes.indexhome',compact('agentes'));
+    }
 
     /**
      * Show the form for creating a new resource.

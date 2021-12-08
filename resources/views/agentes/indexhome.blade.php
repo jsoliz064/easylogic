@@ -134,31 +134,21 @@
 
 
 		<!-- CONTENIDO -->
-		<div class="section">
+<div class="section">
 			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
+	<div class="container">
+		<!-- row -->	
+		@include('agentes.indexcartahome')
 
+		<div class="row">
 
-
-
-			</div>
-
-			<!-- /container -->
-			<div class="ssss">  
-
-
-
-
-
-<br>
-</div>
 		</div>
-			<div id="paginacion">
-  <span class="izquierda">&laquo; Anterior</span>
-  <span class="derecha">Siguiente &raquo;</span>
-</div>		
+	</div>
+	<div id="paginacion">
+		<span class="izquierda">&laquo; Anterior</span>
+		<span class="derecha">Siguiente &raquo;</span>
+	</div>	
+</div>	
 		<!-- /Section -->
 					
 		<!-- CONTENIDO -->
