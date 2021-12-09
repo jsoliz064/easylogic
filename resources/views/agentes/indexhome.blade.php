@@ -65,7 +65,7 @@
                         <div class="header-logo">
                             <a href="{{route('home')}}" class="logo">
                                 <img src="{{asset('img/icono.png')}}" alt="easylogic" width="70px">
-                                EASYLOGIC TEAM&#174;
+                                EASYLOGIC&#174;
                             </a>
                         </div>
 
@@ -159,10 +159,7 @@
             </div>
         </center>
 
-        <div id="paginacion">
-            <span class="izquierda">&laquo; Anterior</span>
-            <span class="derecha">Siguiente &raquo;</span>
-        </div>
+
     </div>
     <!-- /Section -->
 
@@ -174,6 +171,10 @@
 
     <!-- FOOTER -->
     <footer id="footer">
+        <div id="paginacion">
+            <span class="izquierda" type="button" onclick="history.back()" name="boton-personalizado-2"><a>&laquo; Anterior </a></span>
+            <span class="derecha"><a>Siguiente &raquo;</a></span>
+        </div>
         <div class="section">
             <!-- container -->
             <div class="container">

@@ -12,7 +12,8 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="{{asset('style/font-awesome.min.css')}}">
-	<title>Logistica</title>
+	<link rel="icon" type="image/png" href="{{asset('img/icono.png')}}" />
+	<title>easylogic</title>
 
 
 	<!-- Google Fonts -->
@@ -65,7 +66,7 @@
 						<div class="header-logo">
 							<a href="{{route('home')}}" class="logo">
 								<img src="{{asset('img/icono.png')}}" alt="easylogic" width="70px">
-								EASYLOGIC TEAM&#174;
+								EASYLOGIC&#174;
 							</a>
 						</div>
 
@@ -140,42 +141,35 @@
 	<div class="section">
 		<!-- container -->
 		<div class="container">
-			<!-- row -->
-			<div class="row">
-
-
-
-
-			</div>
-
 			<!-- /container -->
-			<div class="ssss">
+			<center>
+				<div class="cuadro">
 
-				<div>
+
 					<a class="contenedor-accion" href="{{route('agente.home')}}">
 						<!--<img src="{{asset('img/icono.png')}}" alt="easylogic" width="80px">-->
 						<i class="fa fa-user-plus" aria-hidden="true" style="font-size:70px"></i>
 						<p class="texto">Agente</p>
 						<i class="fa fa-info" aria-hidden="true" style="font-size:20px;color:#f3753a"> Información</i>
 					</a>
-				</div>
 
 
 
-				<div>
+
+
 					<a class="contenedor-accion" href="">
 						<!--<img src="{{asset('img/icono.png')}}" alt="easylogic" width="80px">-->
-						<i class="fa fa-truck" aria-hidden="true" style="font-size:70px"></i>
+						<i class="fa fa-truck" aria-hidden="true" style="font-size:70px;"></i>
 						<p class="texto">Transporte</p>
 						<i class="fa fa-info" aria-hidden="true" style="font-size:20px;color:#f3753a"> Información</i>
 					</a>
 
-				</div>
 
 
 
 
-				<div>
+
+
 					<a class="contenedor-accion" href="">
 						<!--<img src="{{asset('img/icono.png')}}" alt="easylogic" width="80px">-->
 						<i class="fa fa-cogs" aria-hidden="true" style="font-size:70px"></i>
@@ -183,36 +177,23 @@
 
 						<i class="fa fa-info" aria-hidden="true" style="font-size:20px;color:#f3753a"> Información</i>
 					</a>
-				</div>
 
 
 
-				<div>
+
+
 					<a class="contenedor-accion" href="">
 						<!--<img src="{{asset('img/icono.png')}}" alt="easylogic" width="80px">-->
 						<i class="fa fa-handshake-o" aria-hidden="true" style="font-size:70px"></i>
 						<p class="texto">Exportadora</p>
 						<i class="fa fa-info" aria-hidden="true" style="font-size:20px;color:#f3753a"> Información</i>
 					</a>
+
+
 				</div>
-
-
-
-				<br>
-			</div>
-
-
-
-
-
-
-
+			</center>
 		</div>
-		<div id="paginacion">
-			<span class="izquierda" type="button" onclick="history.back()" name="boton-personalizado-2"><a>&laquo; Anterior </a></span>
 
-			<span class="derecha"><a>Siguiente &raquo;</a></span>
-		</div>
 		<!-- /Section -->
 
 		<!-- CONTENIDO -->
@@ -223,6 +204,17 @@
 
 		<!-- FOOTER -->
 		<footer id="footer">
+			<div id="paginacion">
+				<span class="izquierda" type="button" onclick="history.back()" name="boton-personalizado-2"><a>&laquo; Anterior </a></span>
+				<span class="derecha"><a>Siguiente &raquo;</a></span>
+			</div>
+			<h2 class="textpartners">Partners</h2>
+			<section class="customer-logos slider">
+				<div class="slide"><img src="{{asset('img/logopaner.png')}}"></div>
+				<div class="slide"><img src="{{asset('img/cainco.png')}}"></div>
+				<div class="slide"><img src=""></div>
+				<div class="slide"><img src=""></div>
+			</section>
 			<div class="section">
 				<!-- container -->
 				<div class="container">
@@ -281,6 +273,12 @@
 				</div>
 				<!-- /container -->
 			</div>
+
+
+
+
+
+
 			<div id="bottom-footer" class="section">
 				<div class="container">
 					<div class="row">
@@ -302,3 +300,34 @@
 </body>
 
 </html>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+
+
+
+<script>
+	$(document).ready(function() {
+		$('.customer-logos').slick({
+			slidesToShow: 6,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 1500,
+			arrows: false,
+			dots: false,
+			pauseOnHover: false,
+			responsive: [{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 4
+				}
+			}, {
+				breakpoint: 520,
+				settings: {
+					slidesToShow: 3
+				}
+			}]
+		});
+	});
+</script>
