@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Agente;
 use App\Models\Ciudad;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
+
 
 class AgenteController extends Controller
 {
@@ -50,17 +53,17 @@ class AgenteController extends Controller
             'url'=>'required|image|max:10000'
         ]);
         //guardar archivo en storage
-       /*  $imagenes=$request->file('url')->store('public/personas');
-        $url=Storage::url($imagenes); */
+        $imagenes=$request->file('url')->store('public/agentes');
+        $url=Storage::url($imagenes);
 
-        $path = 'images/agentes/';
+        /* $path = 'images/agentes/';
         $nombre="";
         $img1path = $path .  $_FILES['url']['name'];
         if(move_uploaded_file($_FILES['url']['tmp_name'], $img1path))
         {
             $nombre = $_FILES['url']['name'];
         }
-        $url=$path . $nombre;
+        $url=$path . $nombre; */
 
         $agentes=Agente::create([
             'id_ciudad'=>request('id_ciudad'),
@@ -110,8 +113,15 @@ class AgenteController extends Controller
             $request->validate([
                 'url'=>'required|image|max:10000'
             ]);
+            $ruta = "public".$agente->url;
+            if (file_exists("../".$ruta)){
+                
+                unlink("../".$ruta);
+            }
+            $imagenes=$request->file('url')->store('public/agentes');
+            $url=Storage::url($imagenes);
             //borrar anterior imagen
-            $url = $agente->url;
+            /* $url = $agente->url;
             if (file_exists($url)){
                 unlink($url);
             }
@@ -123,7 +133,7 @@ class AgenteController extends Controller
             {
                 $nombre = $_FILES['url']['name'];
             }
-            $url=$path . $nombre;
+            $url=$path . $nombre; */
             $agente->url=$url;
         }
         $agente->id_ciudad=$request->id_ciudad;
@@ -142,12 +152,12 @@ class AgenteController extends Controller
      */
     public function destroy(Agente $agente)
     {
-        $ruta = $agente->url;
-        if (file_exists($ruta)){
-            unlink($ruta);
+        $ruta = "public".$agente->url;
+        if (file_exists("../".$ruta)){
+            
+            unlink("../".$ruta);
         }
         $agente->delete();
         return redirect()->route('agentes.index');
-    
     }
 }
