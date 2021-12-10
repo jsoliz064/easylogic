@@ -308,7 +308,7 @@
 
 
 
-<script>
+	<script>
 	$(document).ready(function() {
 		$('.customer-logos').slick({
 			slidesToShow: 6,
@@ -331,4 +331,4 @@
 			}]
 		});
 	});
-</script>
+	</script>

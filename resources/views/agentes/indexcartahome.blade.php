@@ -32,12 +32,12 @@
 
     @foreach ($agentes as $agente)
 
-    <<<<<<< HEAD <!-- product -->
+    
         <div class="col-md-3 col-xs-6">
             <div class="product">
                 <div class="product-img">
                     <img class="imgagente" src="{{asset($agente->url)}}" alt="Avatar">
-                    =======
+                 
                     <div class="col-md-3 col-xs-6">
                         <div class="product">
                             <div class="product-img">
@@ -92,7 +92,7 @@
 
 </html>
 
-<<<<<<< HEAD <style>
+    <style>
     .middle {
     transition: .5s ease;
     opacity: 0;

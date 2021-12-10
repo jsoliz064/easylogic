@@ -150,25 +150,7 @@
 /*// agente imagen circular //*/
 
 .imgagente {
-    /*//
-
-
-
-    width: 100%;
-    height: auto;
-    position: relative;      
-    
-    
-    border-radius: 100%;
-   opacity: 1;
-    display: block;
-   border:1px solid #666;
-   transition: .5s ease;
-backface-visibility: hidden;
-
-
-
-   //*/
+  
     width: 300px;
     height: 300px;
 }
