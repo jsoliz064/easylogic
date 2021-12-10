@@ -36,14 +36,13 @@
     @foreach ($agentes as $agente)
 
 
-
     <!-- product -->
     <div class="col-md-3 col-xs-6">
         <div class="product">
             <div class="product-img">
-                <img class="imgagente" src="{{asset($agente->url)}}" alt="">
+                <img class="imgagente" src="{{asset($agente->url)}}" alt="Avatar">
             </div>
-            <div class="product-body">
+            <div class=" product-body">
                 <p class="product-category">Agente</p>
                 <h3 class="product-name"><a href="#">{{$agente->nombre}}</a></h3>
                 <div class="valoracion">
@@ -58,17 +57,28 @@
                     <input id="radio5" type="radio" name="estrellas" value="1">
                     <label for="radio5"><i class="fa fa-star"></i></label>
                 </div>
-                <h4 class="product-price">Ver mas</h4>
-                <p>Teléfono:
-                    {{$agente->telefono}}
-                    <i class="glyphicon glyphicon-envelope">
-                        {{$agente->email}}
-                    </i>
-                </p>
-                <div class="product-btns">
+
+                <!--<div class="product-btns">
                     <button class="add-to-wishlist"><i class="fa fa-heart-o"></i></button>
                     <button class="add-to-cart"><i class="fa fa-shopping-cart"></i></button>
-                </div>
+            </div>-->
+                <br>
+                <i class="fa fa-phone" aria-hidden="true"> {{$agente->telefono}}</i>
+                <br>
+                <i class="glyphicon glyphicon-envelope"> {{$agente->email}}</i>
+
+
+                <h4 class="product-price">
+                    <!--
+                    <div class="container">
+                        <div class="middle">
+                            <div class="text">John Doe</div>
+                        </div>
+                    </div>
+                    -->
+                    Ver mas
+                </h4>
+
             </div>
         </div>
     </div>
@@ -86,55 +96,30 @@
 
 
 
+
 </html>
 
-<script>
-    $(document).ready(function() {
-        var zindex = 10;
+<style>
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%)
+    }
 
-        $("div.card").click(function(e) {
-            e.preventDefault();
 
-            var isShowing = false;
 
-            if ($(this).hasClass("show")) {
-                isShowing = true
-            }
+    .container:hover .middle {
+        opacity: 1;
+    }
 
-            if ($("div.cards").hasClass("showing")) {
-                // a card is already in view
-                $("div.card.show")
-                    .removeClass("show");
-
-                if (isShowing) {
-                    // this card was showing - reset the grid
-                    $("div.cards")
-                        .removeClass("showing");
-                } else {
-                    // this card isn't showing - get in with it
-                    $(this)
-                        .css({
-                            zIndex: zindex
-                        })
-                        .addClass("show");
-
-                }
-
-                zindex++;
-
-            } else {
-                // no cards in view
-                $("div.cards")
-                    .addClass("showing");
-                $(this)
-                    .css({
-                        zIndex: zindex
-                    })
-                    .addClass("show");
-
-                zindex++;
-            }
-
-        });
-    });
-</script>>
+    .text {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        padding: 20px 2px;
+    }
+</style>
