@@ -43,7 +43,7 @@ Route::get('agentesInicio',[AgenteController::class,'indexHome'])->name('agente.
     return view('importadoras.index');
 })->name('importadora.index'); */
 
-/* Route::get('agentes', function () {
-        return view('agentes.indexcartahome');
-})->name('agente.index'); */
+Route::get('transportesInicio', function () {
+        return view('transportes.indexhome');
+})->name('transporte.home');
 

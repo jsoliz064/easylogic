@@ -157,7 +157,7 @@
 
 
 
-					<a class="contenedor-accion" href="">
+					<a class="contenedor-accion" href="{{route('transporte.home')}}">
 						<!--<img src="{{asset('img/icono.png')}}" alt="easylogic" width="80px">-->
 						<i class="fa fa-truck" aria-hidden="true" style="font-size:70px;"></i>
 						<p class="texto">Transporte</p>
