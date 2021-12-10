@@ -158,9 +158,8 @@
 /*// agente imagen circular //*/
 
 .imgagente {
-    display: block;
-  max-width: 100%;
-  height: auto;
+    width: 200px;
+  height: 150px;
     /*//border-radius: 100px;
     border:1px solid #666;//*/
 }

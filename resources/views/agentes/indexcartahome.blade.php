@@ -24,7 +24,7 @@
     <!-- Hoja de estilo personalizada -->
     <link type="text/css" rel="stylesheet" href="{{asset('style/custom.css')}}" >
 
-    <link rel="stylesheet" type="text/css" href="{{asset('styke/home.css')}}" >
+    <link rel="stylesheet" type="text/css" href="{{asset('style/home.css')}}" >
     <title> Home</title>
 </head>
 
@@ -35,7 +35,7 @@
     <div class="col-md-3 col-xs-6">
         <div class="product">
             <div class="product-img">
-                <img class="imgagente img-fluid" src="{{asset($agente->url)}}" alt="" >
+                <img class="imgagente" src="{{asset($agente->url)}}" alt="" >
             </div>
             <div class="product-body">
                 <p class="product-category">Agente</p>
