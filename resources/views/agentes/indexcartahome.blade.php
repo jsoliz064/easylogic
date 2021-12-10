@@ -16,15 +16,15 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
     <!-- Bootstrap -->
-    <link type="text/css" rel="stylesheet" href="style/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="{{asset('style/bootstrap.min.css')}}" />
 
     <!-- Font Awesome Icon -->
-    <link rel="stylesheet" href="style/font-awesome.min.css">
+    <link rel="stylesheet" href="{{asset('style/font-awesome.min.css')}}">
 
     <!-- Hoja de estilo personalizada -->
-    <link type="text/css" rel="stylesheet" href="style/custom.css" />
+    <link type="text/css" rel="stylesheet" href="{{asset('style/custom.css')}}" />
 
-    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('styke/home.css')}}">
     <title> Home</title>
 </head>
 
