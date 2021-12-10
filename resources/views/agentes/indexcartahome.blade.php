@@ -42,7 +42,7 @@
                         <div class="product">
                             <div class="product-img">
                                 <img class="imgagente img-fluid" src="{{asset($agente->url)}}" alt="">
-
+                                >>>>>>> 8669d520c1228981195ee8d3b884a0e78d7180a2
                             </div>
                             <div class=" product-body">
                                 <p class="product-category">Agente</p>
