@@ -137,13 +137,8 @@
     <!-- CONTENIDO -->
     <div class="section">
         <!-- container -->
-        <div class="container">
-            <!-- row -->
+        <div class="container" >
             @include('agentes.indexcartahome')
-
-            <div class="row">
-
-            </div>
         </div>
 
         <center>

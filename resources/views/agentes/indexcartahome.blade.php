@@ -14,34 +14,28 @@
     <title>Logistica</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
-
+    
     <!-- Bootstrap -->
-    <link type="text/css" rel="stylesheet" href="{{asset('style/bootstrap.min.css')}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset('style/bootstrap.min.css')}}" >
 
     <!-- Font Awesome Icon -->
     <link rel="stylesheet" href="{{asset('style/font-awesome.min.css')}}">
 
     <!-- Hoja de estilo personalizada -->
-    <link type="text/css" rel="stylesheet" href="{{asset('style/custom.css')}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset('style/custom.css')}}" >
 
-    <link rel="stylesheet" type="text/css" href="{{asset('styke/home.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('styke/home.css')}}" >
     <title> Home</title>
 </head>
 
 <body>
 
-
-
-
     @foreach ($agentes as $agente)
 
-
-
-    <!-- product -->
     <div class="col-md-3 col-xs-6">
         <div class="product">
             <div class="product-img">
-                <img class="imgagente" src="{{asset($agente->url)}}" alt="">
+                <img class="imgagente img-fluid" src="{{asset($agente->url)}}" alt="" >
             </div>
             <div class="product-body">
                 <p class="product-category">Agente</p>
@@ -72,18 +66,8 @@
             </div>
         </div>
     </div>
-    <!-- /product -->
-
-
-
-
-    <body>
-
-
-
-
-        @endforeach
-
+    @endforeach
+<body>
 
 
 </html>
@@ -137,4 +121,4 @@
 
         });
     });
-</script>>
+</script>
