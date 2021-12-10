@@ -120,7 +120,7 @@
         <div class="container">
             <div id="responsive-nav">
                 <ul class="main-nav nav navbar-nav">
-                    <li class="active"><a href="#">Inicio</a></li>
+                    <li class="active"><a href="{{url('/')}}">Inicio</a></li>
                     <li><a href="#">Agente</a></li>
                     <li><a href="#">transporte</a></li>
                     <li><a href="#">Importadora</a></li>
