@@ -42,7 +42,7 @@
 		<div id="encabezado-superior">
 			<div class="container">
 				<ul class="header-links pull-left">
-					<li><a><i class="fa fa-phone"></i> +0000000</a></li>
+					<li><a><i class="fa fa-phone"></i> +591 69086228</a></li>
 					<li><a href="mailto:logistica@gmail.com"><i class="fa fa-envelope-o"></i> easylogic@gmail.com</a></li>
 					<li><a href="https://goo.gl/maps/N4Cdk8s9FdN2"><i class="fa fa-map-marker"></i> direccion</a></li>
 				</ul>
@@ -201,20 +201,21 @@
 
 
 
-
+		<br>
+		<br>
 		<!-- FOOTER -->
 		<footer id="footer">
 			<div id="paginacion">
 				<span class="izquierda" type="button" onclick="history.back()" name="boton-personalizado-2"><a>&laquo; Anterior </a></span>
 				<span class="derecha"><a>Siguiente &raquo;</a></span>
 			</div>
-			<h2 class="textpartners">Partners</h2>
-			<section class="customer-logos slider">
-				<div class="slide"><img src="{{asset('img/logopaner.png')}}"></div>
-				<div class="slide"><img src="{{asset('img/cainco.png')}}"></div>
-				<div class="slide"><img src=""></div>
-				<div class="slide"><img src=""></div>
-			</section>
+			<div align="center">
+				<h2 class="textpartners">Partners</h2>
+				<section class="customer-logos slider">
+						<div class="slide"><img src="{{asset('img/logopaner.png')}}" ></div>
+						<div class="slide"><img src="{{asset('img/cainco.png')}}" ></div>
+				</section>
+			</div>
 			<div class="section">
 				<!-- container -->
 				<div class="container">
@@ -225,8 +226,8 @@
 								<h3 class="footer-title">Sobre Nosotros</h3>
 								<p>Nos dedicamos a ofrecerte los mejores servicios</p>
 								<ul class="footer-links">
-									<li><a href="#"><i class="fa fa-map-marker"></i>lugar xxxxxxx</a></li>
-									<li><a><i class="fa fa-phone"></i>+00000000000</a></li>
+									<li><a href="#"><i class="fa fa-map-marker"></i>Ubicación</a></li>
+									<li><a><i class="fa fa-phone"></i>+591 69086228</a></li>
 									<li><a href="mailto:easylogic@gmail.com "><i class="fa fa-envelope-o"></i> easylogic@gmail.com </a></li>
 								</ul>
 							</div>

@@ -14,33 +14,37 @@
     <title>Logistica</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
-
+    
     <!-- Bootstrap -->
-    <link type="text/css" rel="stylesheet" href="style/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="{{asset('style/bootstrap.min.css')}}" >
 
     <!-- Font Awesome Icon -->
-    <link rel="stylesheet" href="style/font-awesome.min.css">
+    <link rel="stylesheet" href="{{asset('style/font-awesome.min.css')}}">
 
     <!-- Hoja de estilo personalizada -->
-    <link type="text/css" rel="stylesheet" href="style/custom.css" />
+    <link type="text/css" rel="stylesheet" href="{{asset('style/custom.css')}}" >
 
-    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('styke/home.css')}}" >
     <title> Home</title>
 </head>
 
 <body>
 
-
-
-
     @foreach ($agentes as $agente)
 
+<<<<<<< HEAD
 
     <!-- product -->
     <div class="col-md-3 col-xs-6">
         <div class="product">
             <div class="product-img">
                 <img class="imgagente" src="{{asset($agente->url)}}" alt="Avatar">
+=======
+    <div class="col-md-3 col-xs-6">
+        <div class="product">
+            <div class="product-img">
+                <img class="imgagente img-fluid" src="{{asset($agente->url)}}" alt="" >
+>>>>>>> 8669d520c1228981195ee8d3b884a0e78d7180a2
             </div>
             <div class=" product-body">
                 <p class="product-category">Agente</p>
@@ -82,23 +86,14 @@
             </div>
         </div>
     </div>
-    <!-- /product -->
-
-
-
-
-    <body>
-
-
-
-
-        @endforeach
-
+    @endforeach
+<body>
 
 
 
 </html>
 
+<<<<<<< HEAD
 <style>
     .middle {
         transition: .5s ease;
@@ -123,3 +118,55 @@
         padding: 20px 2px;
     }
 </style>
+=======
+<script>
+    $(document).ready(function() {
+        var zindex = 10;
+
+        $("div.card").click(function(e) {
+            e.preventDefault();
+
+            var isShowing = false;
+
+            if ($(this).hasClass("show")) {
+                isShowing = true
+            }
+
+            if ($("div.cards").hasClass("showing")) {
+                // a card is already in view
+                $("div.card.show")
+                    .removeClass("show");
+
+                if (isShowing) {
+                    // this card was showing - reset the grid
+                    $("div.cards")
+                        .removeClass("showing");
+                } else {
+                    // this card isn't showing - get in with it
+                    $(this)
+                        .css({
+                            zIndex: zindex
+                        })
+                        .addClass("show");
+
+                }
+
+                zindex++;
+
+            } else {
+                // no cards in view
+                $("div.cards")
+                    .addClass("showing");
+                $(this)
+                    .css({
+                        zIndex: zindex
+                    })
+                    .addClass("show");
+
+                zindex++;
+            }
+
+        });
+    });
+</script>
+>>>>>>> 8669d520c1228981195ee8d3b884a0e78d7180a2
