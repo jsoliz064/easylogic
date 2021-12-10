@@ -24,7 +24,7 @@
     <!-- Hoja de estilo personalizada -->
     <link type="text/css" rel="stylesheet" href="{{asset('style/custom.css')}}">
 
-    <link rel="stylesheet" type="text/css" href="{{asset('styke/home.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('style/home.css')}}" >
     <title> Home</title>
 </head>
 
@@ -167,4 +167,4 @@
             });
         });
     </script>
-    >>>>>>> 8669d520c1228981195ee8d3b884a0e78d7180a2
+    
